@@ -1,0 +1,6 @@
+{
+  "name": "CampEX 2.0",
+  "description": "A modern, secure smart wallet for college campuses. Manage digital balances, scan/display QR codes for instant merchant and student payments, track transaction histories, and receive personalized AI spending tips.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

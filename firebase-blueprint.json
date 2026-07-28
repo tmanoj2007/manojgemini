@@ -1,0 +1,33 @@
+{
+  "entities": {
+    "users": {
+      "fields": {
+        "name": "string",
+        "email": "string",
+        "wallet": "number",
+        "role": "string",
+        "displayName": "string",
+        "balance": "number",
+        "studentId": "string",
+        "merchantName": "string",
+        "createdAt": "timestamp"
+      }
+    },
+    "transactions": {
+      "fields": {
+        "userId": "string",
+        "amount": "number",
+        "merchant": "string",
+        "type": "string",
+        "date": "timestamp",
+        "senderId": "string",
+        "senderName": "string",
+        "receiverId": "string",
+        "receiverName": "string",
+        "category": "string",
+        "description": "string",
+        "timestamp": "timestamp"
+      }
+    }
+  }
+}
