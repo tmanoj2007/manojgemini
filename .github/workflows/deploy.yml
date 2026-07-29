@@ -16,11 +16,14 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v1
+
       - name: Install Dependencies
-        run: npm install
+        run: bun install
 
       - name: Build Project
-        run: npm run build
+        run: bun run build
         env:
           VITE_FIREBASE_API_KEY: ${{ secrets.VITE_FIREBASE_API_KEY }}
           VITE_FIREBASE_AUTH_DOMAIN: ${{ secrets.VITE_FIREBASE_AUTH_DOMAIN }}
