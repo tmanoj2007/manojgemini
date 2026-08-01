@@ -4,14 +4,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/manojgemini/',
   plugins: [react()],
-  resolve: {
-    alias: {
-      'node:path': 'path-browserify',
-    },
-  },
   build: {
     rollupOptions: {
-      external: ['fsevents'],
+      external: [
+        'fs', 'path', 'url', 'module', 'events', 'util', 'stream', 'buffer', 'string_decoder',
+        'node:fs', 'node:path', 'node:url', 'node:module', 'node:events', 'node:util', 'node:stream'
+      ],
     },
   },
 })
