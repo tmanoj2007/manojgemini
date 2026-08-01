@@ -5,7 +5,7 @@ import { builtinModules } from 'module'
 const allExternal = [...builtinModules, ...builtinModules.map((m) => `node:${m}`)]
 
 export default defineConfig({
-  base: '/',
+  base: '/manojgemini/',
   plugins: [react()],
   build: {
     rollupOptions: {
